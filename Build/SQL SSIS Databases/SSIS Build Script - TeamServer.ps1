@@ -118,10 +118,10 @@ $output = md $Temp -ErrorAction Ignore
 Write-Host -BackgroundColor Black -ForegroundColor Yellow "Copying Backups to Blob storage....................................................."
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-Invoke-WebRequest 'https://github.com/markjones-msft/SQL-Hackathon/blob/master/Build/SQL%20SSIS%20Databases/2008DW.bak?raw=true' -UseBasicParsing -OutFile "$temp\2008DW.bak" | Wait-Process
-Invoke-WebRequest 'https://github.com/markjones-msft/SQL-Hackathon/blob/master/Build/SQL%20SSIS%20Databases/LocalMasterDataDb.bak?raw=true' -UseBasicParsing -OutFile "$temp\LocalMasterDataDb.bak" | Wait-Process
-Invoke-WebRequest 'https://github.com/markjones-msft/SQL-Hackathon/blob/master/Build/SQL%20SSIS%20Databases/SharedMasterDataDB.bak?raw=true' -UseBasicParsing -OutFile "$temp\SharedMasterDataDB.bak" | Wait-Process
-Invoke-WebRequest 'https://github.com/markjones-msft/SQL-Hackathon/blob/master/Build/SQL%20SSIS%20Databases/TenantDataDb.bak?raw=true' -UseBasicParsing -OutFile "$temp\TenantDataDb.bak" | Wait-Process
+Invoke-WebRequest 'https://github.com/sk-bln/SQL-Hackathon/blob/master/Build/SQL%20SSIS%20Databases/2008DW.bak?raw=true' -UseBasicParsing -OutFile "$temp\2008DW.bak" | Wait-Process
+Invoke-WebRequest 'https://github.com/sk-bln/SQL-Hackathon/blob/master/Build/SQL%20SSIS%20Databases/LocalMasterDataDb.bak?raw=true' -UseBasicParsing -OutFile "$temp\LocalMasterDataDb.bak" | Wait-Process
+Invoke-WebRequest 'https://github.com/sk-bln/SQL-Hackathon/blob/master/Build/SQL%20SSIS%20Databases/SharedMasterDataDB.bak?raw=true' -UseBasicParsing -OutFile "$temp\SharedMasterDataDB.bak" | Wait-Process
+Invoke-WebRequest 'https://github.com/sk-bln/SQL-Hackathon/blob/master/Build/SQL%20SSIS%20Databases/TenantDataDb.bak?raw=true' -UseBasicParsing -OutFile "$temp\TenantDataDb.bak" | Wait-Process
 
 # Copy Files to Blob
 cd $Temp

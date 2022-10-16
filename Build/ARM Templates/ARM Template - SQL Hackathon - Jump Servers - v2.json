@@ -56,7 +56,7 @@
         "jbPublicIpAddressName": "[concat( 'ip-', variables('jbVirtualMachineName'))]",
         "virtualNetworkName": "[concat(parameters('SharedResourceGroup'), '-vnet')]",
         "jbCustomScriptFileName": "ARM%20Deployment%20-%20TEAM%20VM%20Build%20RC4.ps1",
-        "jbCustomScriptUri": "[concat('https://raw.githubusercontent.com/markjones-msft/SQL-Hackathon/master/Build/Powershell/', variables('jbCustomScriptFileName'))]",
+        "jbCustomScriptUri": "[concat('https://raw.githubusercontent.com/sk-bln/SQL-Hackathon/master/Build/Powershell/', variables('jbCustomScriptFileName'))]",
         "managementSubnetName": "TeamJumpServers"
     },
 
@@ -88,7 +88,7 @@
                     "imageReference": {
                         "publisher": "MicrosoftWindowsDesktop",
                         "offer": "Windows-10",
-                        "sku": "19h1-pro",
+                        "sku": "21h2-pro",
                         "version": "latest"
                     }
                 },
