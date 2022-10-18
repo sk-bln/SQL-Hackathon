@@ -49,7 +49,7 @@ Unzip "$InstallPath\Lab2.zip" "$Labs2Path"
 
 #Download Items for LAB 03
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-Invoke-WebRequest 'https://github.com/sk-bln/SQL-Hackathon/raw/master/Hands-On%20Lab/03%20Security/Hands-on-Lab%20-%20Data%20Security.pdf' -OutFile "$Labs3Path\Hands-on Lab - Security.pdf"
+Invoke-WebRequest 'https://github.com/sk-bln/SQL-Hackathon/blob/master/Hands-On%20Lab/03%20Security/Part%203%20-%20Security%20Hands-on%20Lab.pdf' -OutFile "$Labs3Path\Hands-on Lab - Security.pdf"
 $StorageAccount | out-file -FilePath "$Labs3Path\StorageAccount.txt"
 
 Invoke-WebRequest 'https://raw.githubusercontent.com/sk-bln/SQL-Hackathon/master/Hands-On%20Lab/03%20Security/SQLScripts/2.%20Auditing.sql' -OutFile "$Labs3SecurityPath\2.Auditing.sql"
