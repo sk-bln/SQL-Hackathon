@@ -1,4 +1,12 @@
-﻿$defaultPassword = "Demo@pass1234567"
+﻿
+$x = 4
+do
+    {$x = $x - 1
+    if ($x -lt 3){write-host "Not enough characters. Retries remaining: " $x};
+    if ($x -le 0) {write-host "Existing build. Please check password and retry..."; Exit};
+    $defaultPassword = Read-Host "Please enter a 16 character Password for the user accounts. The password must be between 16 and 128 characters in length and must contain at least one number, one non-alphanumeric character, and one upper or lower case letter" -AsSecureString
+    }
+while ($defaultPassword.length -le 15)
 
 function Load-Module ($m) {
 
