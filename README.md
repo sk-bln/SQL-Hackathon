@@ -48,7 +48,9 @@ The following diagram provides an overview of the Lab environment that will be b
 
 ***NOTE This repositry will install a number of components within the designated subscription at an estimated cost of around $20 per day***
 
-For detailed instructions, see "Create demo HOL environments for SQL Hacks.pdf"
+For detailed instructions, see 
+[Create demo HOL environments for SQL Hacks.pdf](
+SubscriptionSetup/Create%20demo%20HOL%20environments%20for%20SQL%20Hacks.pdf)
 
 To install please complete the following:
 1. Go to the BUILD folder and download the ARM Deployment - SQL Hackathon v2.ps1 powershell script.
@@ -58,4 +60,4 @@ To install please complete the following:
 
 
 ## Known Issues ##
-
+43
