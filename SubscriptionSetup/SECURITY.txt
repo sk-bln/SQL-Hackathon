@@ -1,0 +1,7 @@
+Notice that the environment has fixed passwords (except for the admin account created at the beginning) and this password is published in the guides on Github
+So make sure the following:
+-	Do not use your standard or paid subscription without changing the passwords
+-	Shut down the VMs when they are not in use
+-	Limit RDP to participant VMs to the ranges needed
+-	Disable the participant (SQLHACK_TEAMxx…) and demouser Azure AD accounts when they are not in use
+-	Enable MFA on the admin account
